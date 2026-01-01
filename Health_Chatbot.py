@@ -2,7 +2,7 @@ import streamlit as st
 from openai import OpenAI
 
 # Initialize OpenAI client (reads from OPENAI_API_KEY env variable)
-client = OpenAI(api_key=st.secret["OPENAI_API_KEY"])
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 SYSTEM_PROMPT = (
     "You are a helpful assistant and expert in health related queries. "
